@@ -1,0 +1,86 @@
+//
+// Topbar
+// --------------------------------------------------
+
+#topbar-first {
+    background-color: @primary;
+    
+    .logo{
+    	overflow: auto;
+    	float: left;
+    	font-family: Mont;
+    	margin: 0 0 0 -100px;
+    }
+    
+
+    .pull-left {
+	    font-family: Mont;
+	    float: left !important;
+    }
+    
+   a{
+        color: white;
+        font-family: Mont;
+    }
+
+   .nav > li > a:hover,
+    .nav > .open > a {
+        background-color: lighten(@primary, 10%);
+    }
+    
+    
+     .btn-group > a {
+        background-color: lighten(@primary, 5%);
+    }
+
+    .btn-enter {
+        background-color: lighten(@primary, 5%);
+        margin: 6px 0;
+    }
+
+    .btn-enter:hover {
+        background-color: lighten(@primary, 8%);
+    }
+
+     .account .user-title {
+        text-align: right;
+
+        span {
+            color: @background3;
+        }
+    }
+    
+
+     .text {
+	  position: absolute;
+	  color: white;
+	  font-weight: bold;
+	}
+	
+    p{
+    	font-weight: bold;
+    	font-family: Mont;
+    	margin: 0 0 0 5px;
+      }
+
+    .dropdown.account > a,
+    .dropdown.account.open > a,
+    .dropdown.account > a:hover,
+    .dropdown.account.open > a:hover {
+        background-color: @primary;
+    }
+
+    @media only screen and (min-width: 700px) {
+		.topbar-brand {
+        margin-left: 91px;
+		}
+	  }
+}
+
+#topbar-second{
+    font-family: Mont;
+}
+
+#layout-content{
+    font-family: Mont;
+}

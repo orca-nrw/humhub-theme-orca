@@ -1,0 +1,36 @@
+//
+// Dropdowns
+// --------------------------------------------------
+.dropdown-menu {
+    li {
+
+        a:hover,
+        a:visited,
+        a:hover,
+        a:focus {
+            background-color: lighten(@primary, 10%);
+            cursor: pointer;
+        }
+    }
+
+    li:hover,
+    li.selected {
+        color: @text-color-highlight;
+    }
+
+    li:first-child {
+        margin-top: 3px;
+    }
+
+    li:last-child {
+        margin-bottom: 3px;
+    }
+}
+
+.nav-pills .dropdown-menu, .nav-tabs .dropdown-menu, .account .dropdown-menu {
+    background: @primary;
+}
+
+.modal .dropdown-menu, .panel .dropdown-menu, .nav-tabs .dropdown-menu {
+    border: 1px solid #d7d7d7;
+}

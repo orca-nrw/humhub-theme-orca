@@ -1,0 +1,18 @@
+// Import base components. Components can be deactivated by @prev-* variables.
+
+
+@prev-topbar: false;
+& when not(@prev-topbar) {
+    @import "topbar.less";
+}
+
+@prev-dropdown: false;
+& when not(@prev-dropdown) {
+    @import "dropdown.less";
+}
+
+@prev-modal: false;
+& when not(@prev-modal) {
+    @import "modal.less";
+}
+
